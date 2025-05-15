@@ -77,10 +77,6 @@
   text-transform: uppercase;
 }
 
-.card-list {
-
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -93,6 +89,7 @@
   align-self: start;
   justify-self: center;
   font-family: var(--main-font-family, sans-serif);
+  font-variation-settings: "wght" 700, "slnt" 0, "wdth" 100;
   color: var(--main-color-text);
   font-size: var(--h2-size, 18px);
   font-weight: var(--accent-font-weight);
@@ -174,6 +171,7 @@
   flex-direction: column;
   padding: 26px 26px;
   font-family: var(--main-font-family, sans-serif);
+  font-variation-settings: "wght" 400, "slnt" 0, "wdth" 100;
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size, 18px);
   line-height: 115%;
