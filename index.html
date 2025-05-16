@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,15 +15,7 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
 </head>
-
 <body class="page">
-  <!-- дискета -->
-  <svg style="display: none">
-    <symbol id="icon-floppy" viewBox="0 0 40 40">
-      <path fill="currentColor"
-        d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z" />
-    </symbol>
-  </svg>
   <header class="header section-size">
     <span class="header__logo">&lt;/html&gt;</span>
     <h1 class="header__heading">закрывающий тег</h1>
@@ -35,7 +28,8 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="card__image-wrapper">
-            <img class="card__image" src="./images/image-cat1.jpg" alt="Черно-белый кот с зелеными глазами крупным планом" />
+            <img class="card__image" src="./images/image-cat1.jpg" loading="lazy"
+              alt="Черно-белый кот с зелеными глазами крупным планом" />
             <span class="card__image-label">falling in love</span>
           </div>
           <div class="card__text">
@@ -46,7 +40,7 @@
             </p>
             <p>Эйфория от первого знакомства с новой профессией...</p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -76,7 +70,8 @@
         <article class="card">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-contrast" src="./images/image-cat2.jpg" alt="Полосатый кот охотится" />
+            <img class="card__image card__image-changed-contrast" src="./images/image-cat2.jpg" loading="lazy"
+              alt="Полосатый кот охотится" />
             <span class="card__image-label">falling in love</span>
           </div>
           <div class="card__text">
@@ -90,7 +85,7 @@
             </p>
             <p>Азарт и интерес не давали пространства страху.</p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -120,7 +115,8 @@
         <article class="card">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-grayscale" src="./images/image-cat3.jpg" alt="Серый кот крупным планом" />
+            <img class="card__image card__image-changed-grayscale" src="./images/image-cat3.jpg" loading="lazy"
+              alt="Серый кот крупным планом" />
             <span class="card__image-label">interest</span>
           </div>
           <div class="card__text">
@@ -131,7 +127,7 @@
             </p>
             <p>Ничего не понятно, но очень интересно!</p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -161,7 +157,7 @@
         <article class="card">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-hue-rotate" src="./images/image-cat4.jpg"
+            <img class="card__image card__image-changed-hue-rotate" src="./images/image-cat4.jpg" loading="lazy"
               alt="Белый кот с рыжими пятнами" />
             <span class="card__image-label">interest</span>
           </div>
@@ -173,9 +169,12 @@
               вовсе и не подвержены перфекционизму и вместо того, чтобы
               сделать идеально, старались просто сделать.
             </p>
-            <p>Ох уж этот Pixel Perfect. Чтоб его! А нет, все сошлось... Кааааайф</p>
+            <p>
+              Ох уж этот Pixel Perfect. Чтоб его! А нет, все сошлось...
+              Кааааайф
+            </p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -205,7 +204,8 @@
         <article class="card">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-sepia" src="./images/image-cat5.jpg" alt="Зевающий котенок в постели" />
+            <img class="card__image card__image-changed-sepia" src="./images/image-cat5.jpg" loading="lazy"
+              alt="Зевающий котенок в постели" />
             <span class="card__image-label">passion</span>
           </div>
           <div class="card__text">
@@ -217,9 +217,12 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p>Практикум-лучший!&#10084; Практикум-лучший!&#10084; Практикум-лучший!&#10084;</p>
+            <p>
+              Практикум-лучший!&#10084; Практикум-лучший!&#10084;
+              Практикум-лучший!&#10084;
+            </p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -249,7 +252,8 @@
         <article class="card">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-blur" src="./images/image-cat6.jpg" alt="Человек гладит трехцветного кота" />
+            <img class="card__image card__image-changed-blur" src="./images/image-cat6.jpg" loading="lazy"
+              alt="Человек гладит трехцветного кота" />
             <span class="card__image-label">passion</span>
           </div>
           <div class="card__text">
@@ -258,9 +262,11 @@
               момент вам могло показаться, что решения просто иссякли. Значит,
               пришло время посмотреть на задачу под другим углом.
             </p>
-            <p>Иногда достаточно изменить точку зрения, чтобы увидеть свет.</p>
+            <p>
+              Иногда достаточно изменить точку зрения, чтобы увидеть свет.
+            </p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -290,7 +296,8 @@
         <article class="card">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-saturate" src="./images/image-cat7.jpg" alt="Пушистый трехцветный кот крупным планом" />
+            <img class="card__image card__image-changed-saturate" src="./images/image-cat7.jpg" loading="lazy"
+              alt="Пушистый трехцветный кот крупным планом" />
             <span class="card__image-label">motivation</span>
           </div>
           <div class="card__text">
@@ -301,9 +308,11 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p>Мой секрет прост: много кофе, мотивации и свободного времени</p>
+            <p>
+              Мой секрет прост: много кофе, мотивации и свободного времени
+            </p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -333,7 +342,8 @@
         <article class="card">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-wrapper">
-            <img class="card__image card__image-changed-opacity" src="./images/image-cat8.jpg" alt="Кот полосатого окраса" />
+            <img class="card__image card__image-changed-opacity" src="./images/image-cat8.jpg" loading="lazy"
+              alt="Кот полосатого окраса" />
             <span class="card__image-label">motivation</span>
           </div>
           <div class="card__text">
@@ -346,10 +356,11 @@
               процесс познания. Ведь часто путь — и есть результат.
             </p>
             <p>
-              Я чувствую и понимаю, что оказалась в правильном месте. И это прекрасно.
+              Я чувствую и понимаю, что оказалась в правильном месте. И это
+              прекрасно.
             </p>
             <div class="section-like">
-              <button class="card__icon-button">
+              <button type="button" aria-label="Like" aria-hidden="true" class="card__icon-button">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g class="heart">
@@ -376,26 +387,24 @@
         </article>
       </li>
     </ul>
-  </main>
-  <footer class="footer">
-    <button class="footer__save-button button responsive-button button__without-activity"
+    <button class="save-button button responsive-button button__without-activity"
       onclick="window['insert-floppy'].showModal()" aria-controls="insert-floppy">
-      <svg class="icon-floppy icon-floppy-inside-button">
-        <use href="#icon-floppy"></use>
+      <svg class="icon-floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+        <use href="./svg/icons.svg#icon-floppy" />
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
     <dialog id="insert-floppy" class="dialog-window">
-      <svg class="icon-floppy">
-        <use href="#icon-floppy"></use>
+      <svg class="icon-floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <use href="./svg/icons.svg#icon-floppy" />
       </svg>
-      <span class="dialog-window__text">Вставьте дискету, чтобы продолжить</span>
+      <p class="dialog-window__text">Вставьте дискету, чтобы продолжить</p>
       <button type="button" onclick="window['insert-floppy'].close()"
         class="dialog__button button responsive-button button__without-activity">
         <span class="button__text">ок</span>
       </button>
     </dialog>
-  </footer>
+  </main>
   <script src="./scripts/like.js"></script>
 </body>
 
