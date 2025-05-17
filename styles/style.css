@@ -241,14 +241,13 @@ dialog .icon-floppy {
 
 
 .button {
-  background-color: transparent;
   border: 2px #000 solid;
   box-shadow: none;
   outline: none;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--bg-color);
   z-index: 0;
   transition: box-shadow 0.3s ease;
 }
