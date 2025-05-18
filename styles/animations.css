@@ -21,14 +21,12 @@
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s ease;
-  transition-delay: 0.03s;
+  transition: fill 0.3s ease 0.03s;
 }
 
 .like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s ease;
-  transition-delay: 0s;
 }
 
 .like-icon .contour {
@@ -58,7 +56,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0s;
+  transition-delay: 0.6s;
 }
 
 .like-icon.is-liked .main-body {
@@ -68,12 +66,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition-delay: 0.1s;
-}
-
-.like-icon:active .contour {
-  fill: var(--contour-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon .sparks {

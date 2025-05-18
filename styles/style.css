@@ -1,7 +1,6 @@
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-inline-size: 320px;
   max-inline-size: 100%;
@@ -22,8 +21,8 @@
   align-items: center;
   gap: 20px;
   margin: 100px auto;
-  padding-block-start: clamp(120px, 2vw + 116px, 128px);
-  padding-block-end: clamp(120px, 2vw + 116px, 128px);
+  padding-block-start: 128px;
+  padding-block-end: 128px;
   background-color: var(--bg-color, #fff);
   border: 2px #000 solid;
 }
@@ -53,6 +52,8 @@
   font-weight: var(--main-font-weight);
   line-height: 1;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
@@ -77,6 +78,7 @@
 
 .card__image-wrapper {
   position: relative;
+  margin: 0;
 }
 
 .card__image {
@@ -334,14 +336,18 @@ dialog::backdrop {
 }
 
 @media (max-width: 376px) {
-
   .header {
-    gap: 15px;
-  }
+  padding-block-start: 120px;
+  padding-block-end: 120px;
+}
 
   .section-size {
     inline-size: 100%;
   }
+
+.card__image-wrapper {
+  margin-block-end: 1px;
+}
 
   .card__image-label {
     top: 23px;
